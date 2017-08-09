@@ -1,5 +1,5 @@
 class Pokemon
-  attr_accessor :name, :type, :health, :attack #:attack_m
+  attr_accessor :name, :type, :health, :attack
 
   def initialize(name, type, health, attack)
     @level = 50
@@ -7,7 +7,7 @@ class Pokemon
     @type = type
     @health = health
     @attack = attack
-    #@attack_m = 0
+
 
   end
 
@@ -49,8 +49,6 @@ class Battle
     puts "#{@contender1.name} deals #{ac2} damages to #{@contender2.name} "
     puts "#{@contender2.name} deals #{ac1} damages to #{@contender1.name} "
 
-    # @contender2.attack_m = 0
-    # @contender1.attack_m = 0
   end
 
   def match
